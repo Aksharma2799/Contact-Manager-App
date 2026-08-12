@@ -9,4 +9,3 @@ node_modules/
 .env
 
 
-mongodb+srv://vishwakarmaashish581:<db_password>@cluster0.sq6vncf.mongodb.net/
