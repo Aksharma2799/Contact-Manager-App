@@ -8,10 +8,12 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 5001;
 
+//Middleware
+app.use(express.json());
+
 //Routes
 app.use("/api/contacts", require("./routes/contactRoutes"));
 
-app.use(express.json());
 app.use(errorHandler);
 
 //Server port
