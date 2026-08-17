@@ -12,10 +12,22 @@
     "dev": "nodemon --legacy-watch server.js"
   },
   "nodemonConfig": {
-    "watch": ["server.js", "config", "controllers", "middleware", "routes", "constants.js"],
-    "ignore": ["node_modules", ".git", ".env"]
+    "watch": [
+      "server.js",
+      "config",
+      "controllers",
+      "middleware",
+      "routes",
+      "constants.js"
+    ],
+    "ignore": [
+      "node_modules",
+      ".git",
+      ".env"
+    ]
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "express-async-handler": "^1.2.0",
